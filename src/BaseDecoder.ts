@@ -1,10 +1,10 @@
 import { BitBuffer } from "./BitBuffer"
 
-interface IBaseDecoderOptions {
+export interface IBaseDecoderOptions {
   streaming?: boolean
 }
 
-interface IBaseDecoderTimeStampt {
+export interface IBaseDecoderTimeStampt {
   index: number
   time: number
 }
