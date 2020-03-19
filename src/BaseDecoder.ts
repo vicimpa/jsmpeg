@@ -26,12 +26,10 @@ export class BaseDecoder {
     return this.getCurrentTime()
   }
 
+  public destroy() {}
+
   constructor(options: IBaseDecoderOptions = {}) {
     this.collectTimestamps = !options.streaming
-  }
-
-  public destroy() {
-    // Empty
   }
 
   public connect(destination) {

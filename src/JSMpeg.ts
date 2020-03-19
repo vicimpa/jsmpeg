@@ -11,11 +11,10 @@ export function CreateVideoElements() {
   }
 }
 
-export function Fill(array, value) {
+export function Fill(array: Float32Array, value: number) {
   if (array.fill) {
     array.fill(value)
-  }
-  else {
+  } else {
     for (let i = 0; i < array.length; i++) {
       array[i] = value
     }
@@ -30,5 +29,6 @@ export function Base64ToArrayBuffer(base64: string) {
   for (let i = 0; i < length; i++) {
     bytes[i] = binary.charCodeAt(i)
   }
+  
   return bytes.buffer
 }

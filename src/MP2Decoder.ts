@@ -29,6 +29,8 @@ export class MP2 extends BaseDecoder {
   scaleFactor: [Array<number[]>, Array<number[]>] = [new Array(32), new Array(32)]
   sample: [Array<number[]>, Array<number[]>] = [new Array(32), new Array(32)]
 
+  onDecodeCallback(decoder: MP2, elapsedTime: number) {}
+
   constructor(options: IMP2Options = {}) {
     super(options)
 
@@ -50,10 +52,6 @@ export class MP2 extends BaseDecoder {
         this.sample[j][i] = [0, 0, 0]
       }
     }
-  }
-
-  public onDecodeCallback(decoder: MP2, elapsedTime: number) {
-
   }
 
   public decode() {
