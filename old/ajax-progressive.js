@@ -1,4 +1,6 @@
-JSMpeg.Source.AjaxProgressive = (function(){ "use strict";
+var JSMpeg = require('./jsmpeg')
+
+exports.AjaxProgressive = (function(){ "use strict";
 
 var AjaxProgressiveSource = function(url, options) {
 	this.url = url;

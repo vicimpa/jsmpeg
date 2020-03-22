@@ -1,4 +1,6 @@
-JSMpeg.Decoder.Base = (function(){ "use strict";
+var JSMpeg = require('./jsmpeg')
+
+module.exports.Base = (function(){ "use strict";
 
 var BaseDecoder = function(options) {
 	this.destination = null;

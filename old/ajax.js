@@ -1,4 +1,4 @@
-JSMpeg.Source.Ajax = (function(){ "use strict";
+module.exports.Ajax = (function(){ "use strict";
 
 var AjaxSource = function(url, options) {
 	this.url = url;

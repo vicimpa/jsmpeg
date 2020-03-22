@@ -1,4 +1,4 @@
-JSMpeg.BitBuffer = (function(){ "use strict";
+module.exports.BitBuffer = (function(){ "use strict";
 
 var BitBuffer = function(bufferOrLength, mode) {
 	if (typeof(bufferOrLength) === 'object') {

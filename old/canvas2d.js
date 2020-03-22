@@ -1,4 +1,6 @@
-JSMpeg.Renderer.Canvas2D = (function(){ "use strict";
+var JSMpeg = require('./jsmpeg')
+
+module.exports.Canvas2D = (function(){ "use strict";
 
 var CanvasRenderer = function(options) {
 	this.canvas = options.canvas || document.createElement('canvas');

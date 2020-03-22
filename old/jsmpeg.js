@@ -3,7 +3,7 @@
 
 // This sets up the JSMpeg "Namespace". The object is empty apart from the Now()
 // utility function and the automatic CreateVideoElements() after DOMReady.
-var JSMpeg = {
+module.exports = {
 
 	// The Player sets up the connections between source, demuxer, decoders,
 	// renderer and audio output. It ties everything together, is responsible
@@ -112,11 +112,9 @@ var JSMpeg = {
 };
 
 // Automatically create players for all found <div class="jsmpeg"/> elements.
-if (document.readyState === 'complete') {
-	JSMpeg.CreateVideoElements();
-}
-else {
-	document.addEventListener('DOMContentLoaded', JSMpeg.CreateVideoElements);
-}
-
-
+// if (document.readyState === 'complete') {
+// 	JSMpeg.CreateVideoElements();
+// }
+// else {
+// 	document.addEventListener('DOMContentLoaded', JSMpeg.CreateVideoElements);
+// }
